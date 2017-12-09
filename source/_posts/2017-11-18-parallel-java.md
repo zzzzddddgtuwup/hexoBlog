@@ -1,5 +1,5 @@
 ---
-title: 循环的并行优化 - Barrier
+title: 循环的并行优化  - Barrier
 date: 2017-11-18 09:51:44
 tags: parallel-java
 ---
@@ -32,8 +32,7 @@ stream有一个缺点，只能返回一个结果。
 ```
 通过添加barrier，所有的线程会先打印hello，都打印完成后，才会打印bye
 
-这里有一个使用barrier优化的例子：
-We have a simple stencil computation to solve the recurrence, Xi = (Xi−1 + Xi+1)/2 with boundary conditions, X0 = 0 and Xn = 1. 
+这里有一个使用barrier优化的例子,我们想要做不断迭代的求平均。Xi = (Xi−1 + Xi+1)/2 with boundary conditions, X0 = 0 and Xn = 1. 
 
 ```
 for (iter: [0:nsteps - 1]){

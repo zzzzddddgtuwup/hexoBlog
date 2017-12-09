@@ -1,7 +1,7 @@
 ---
-title: Parallel java - fork/join框架
-tags: java
-date: 2017-11-28 23:00:59
+title: fork/join框架
+tags: parallel-java
+date: 2017-11-13 23:00:59
 ---
 
 ## fork/join框架
